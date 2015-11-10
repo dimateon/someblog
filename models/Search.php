@@ -14,10 +14,9 @@ class Search {
 
 
     }
-    public static function viewByAuthor()
+    public static function viewByAuthor($author_name)
     {
-        $id = News::getNewsList();
-        $author_name = $id[$i]['author_name'];
+
 
         $db = Db::getConnection();
 
@@ -26,6 +25,11 @@ class Search {
 
         $result = $db->prepare($sql);
         $result->bindParam("author_name", $author_name, PDO::PARAM_STR);
+        $result->execute();
+        $author_name = $result->fetch();
+        if($author_name){
+            return $author_name;
+        }
     }
 
 
