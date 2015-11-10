@@ -14,7 +14,7 @@
             <a href="/">Some<br>blog.</a>
         </div>
         <div class=sign>
-            <a href="/user/logout"><p>Sign in or  <br>Sign up</p></a>
+            <a href="/user/login"><p>Sign in or  <br>Sign up</p></a>
         </div>
     </div>
     <div class="header">
