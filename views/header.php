@@ -25,13 +25,13 @@
             <a href="/top">Top</a>
         </div>
         <div class="random">
-            <a href="/random">Random</a>
+            <a href="/top">Random</a>
         </div>
         <div class="categories">
-            <a href="/categories">Categories</a>
+            <a href="/top">Categories</a>
         </div>
         <div class="site_rules">
-            <a href="/rules">Site rules</a>
+            <a href="/top">Site rules</a>
         </div>
         <div class="search_bg">
             <!--Ниже нужно указать вид передачи данных какойто, думаю тебе виднее какой нужен-->

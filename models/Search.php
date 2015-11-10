@@ -1,7 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sett
- * Date: 09.11.15
- * Time: 9:58
- */
+include_once ROOT.'/models/News.php';
+include_once ROOT.'/components/View.php';
+
+class Search {
+
+    public static function searchByAuthor()
+    {
+        $id = array();
+        $id = News::getNewsList();
+        $author_name = $id[$i]['author_name'];
+
+        return $author_name;
+
+
+    }
+
+    public static function viewByAuthor(){
+
+        $db = Db::getConnection();
+
+        $sql = 'SELECT * FROM posts'
+               ''
+    }
+
+}
