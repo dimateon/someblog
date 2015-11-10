@@ -15,8 +15,7 @@ class AddController {
         if (User::checkLogged()) {
             $id = $_SESSION['user'];
             $author_name = Add::getAuthorname($id);
-            echo $author_name;
-            print_r($_SESSION);
+
 
             if (isset($_REQUEST['submit'])) {
                 $title = $_REQUEST['title'];

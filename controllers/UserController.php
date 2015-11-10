@@ -77,7 +77,7 @@ require_once(ROOT.'/models/User.php');
 
                   //redirect
 
-                  header("Location: /");
+                  header("Location:/");
               }
 
 

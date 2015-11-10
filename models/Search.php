@@ -14,13 +14,20 @@ class Search {
 
 
     }
-
-    public static function viewByAuthor(){
+    public static function viewByAuthor()
+    {
+        $id = News::getNewsList();
+        $author_name = $id[$i]['author_name'];
 
         $db = Db::getConnection();
 
         $sql = 'SELECT * FROM posts'
-               ''
+              .'WHERE author_name = :author_name';
+
+        $result = $db->prepare($sql);
+        $result->bindParam("author_name", $author_name, PDO::PARAM_STR);
     }
+
+
 
 }

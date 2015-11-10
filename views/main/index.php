@@ -4,7 +4,7 @@
 	<div class="text_button_here">
 		<p>To start a blog click</p>
 			<div class="here_button">
-				<a href="/add">here</a>
+				<a href="/add/">here</a>
 			</div>
 	</div>
 </div>

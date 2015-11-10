@@ -8,9 +8,9 @@ class MainController
     {
         if(isset($_POST['submit'])) {
             if(User::checkLogged()){
-                header("Location:/add");
+                header("Location:/add/");
             } else {
-                header("Location:/user/login");
+                header("Location:/user/login/");
             }
             return true;
 
