@@ -11,13 +11,21 @@
    </ul>
 <?php endif; ?>
 
-<div class="signup-form"><!--sign up form-->
-    <h2>Регистрация на сайте</h2>
+<div class="signup_form"><!--sign up form-->
+    <p>Sign up</p>
     <form action="#" method="post">
-        <input type="text" name="name" placeholder="Имя" value="<?php echo $name;?>"/>
-        <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
-        <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
-        <input type="submit" name="submit" class="btn btn-default" value="Регистрация" />
+        <div class="username_form">
+            <input type="text" name="name" placeholder="Username" value="<?php echo $name;?>"/>
+        </div>
+        <div class="email_form">
+            <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>"/>
+        </div>
+        <div class="password_form">
+            <input type="password" name="password" placeholder="Password" value="<?php echo $password; ?>"/>
+        </div>
+        <div class="sign_in_but">
+            <input type="submit" name="submit" class="" value="Sign up"/>
+        </div>
     </form>
 </div><!--/sign up form-->
 
