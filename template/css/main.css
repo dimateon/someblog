@@ -68,30 +68,9 @@ a {
 	height: 80px;
 	line-height: 35px;
 }
-.sign {
-	position: relative;
-	margin: 0;
-	color: #fff;
-	font-size: 14px;
-	font-family: "SegoePrintBold";
-	border: 2px solid #fff;
-	width: 140px;
-	height: 60px;
-	left: 835px;
-	bottom:65px;
-	text-align: center;
-	line-height: 35px;
-}
-
-.sign a {
+.name a:hover {
 	text-decoration: none;
-	color: #fff;
-}
-
-.sign p {
-	position: relative;
-	bottom:19px;
-
+	color: #000;
 }
 /*                                Header                       */
 .header {
@@ -165,6 +144,8 @@ a {
 }
 .categories:hover {
 	opacity: 0.7;
+	color: #fff;
+	text-decoration: none;
 }
 .site_rules {
 	width: 200px;
@@ -181,38 +162,34 @@ a {
 }
 .site_rules:hover {
 	opacity: 0.7;
+	color: #fff;
 }
 /*                                    Окошко поиска                   */
 .search_bg {
 	height: 100px;
 	position: relative;
-	/*bottom: 400px;*/
+	bottom: 400px;
 }
 .search {
 	width: 200px;
 	height: 50px;
-
+	border: 2px solid #000;
 	margin-left: 785px;
 	margin-top: 25px;
 }
 input[name=search] {
-	margin-top: 10px;
-	border: 3px solid #000;
+	border: none;
 	background: #f9f8ee;
-	width: 198px;
-	height: 48px;
+	width: 196px;
+	height: 46px;
 	text-align: center;
 	font-family: "SegoeUIRegular";
 	font-size: 14px;
 }
 input:active, textarea:active {outline: none;}
 /*                                        Контент                         */
-.content  {
-	
- margin-top: 100px;
-}
-.content div {
-	text-align: center;
+.content {
+	margin-top: 100px;
 }
 /*                               Разделительные линии контента                    */
 .top_sep {
@@ -223,14 +200,14 @@ input:active, textarea:active {outline: none;}
 	height: 5px;
 	background: url("../images/bot_sep.png") repeat-x left top;
 	margin-top: 40px;
-	padding-top: 30px;
+	padding-top: 30px
 }
 /*                                     footer                    */
 .footer {
 	text-align: center;
 	height: 35px;
 	line-height: 35px;
-	transform: translateY(-15px);
+	transform: translateY(-13px);
 	-o-transform: translateY(-15px);
 	-webkit-transform: translateY(-15px);
 	-moz-transform: translateY(-15px);
@@ -239,3 +216,69 @@ input:active, textarea:active {outline: none;}
 	font-size: 12px;
 }
 /*                                  Sign IN                         */
+.sign {
+	position: relative;
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+	font-family: "SegoePrintBold";
+	border: 2px solid #fff;
+	width: 140px;
+	height: 60px;
+	left: 835px;
+	bottom:65px;
+	text-align: center;
+}
+.sign a {
+	text-decoration: none;
+	color: #fff;
+}
+.sign p {
+	bottom:19px;
+	line-height: 28px;
+	height: 60px;
+}
+.sign a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/*                                    Click HERE                          */
+.click_here {
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	height: 100px;
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+.click_here p {
+	padding-bottom: 30px;
+	text-align: center;
+	text-shadow: 3px 3px 3px rgba(0,0,0, 0.5);
+}
+.click_here a {
+	font-family: "SegoePrintBold";
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	display: block;
+}
+.here_button {
+	width: 146px;
+	height: 60px;
+	border: 2px solid #000;
+	line-height: 60px;
+	margin-left: 180px;
+	margin-top: -82px;
+	text-align: center;
+}
+.text_button_here {
+	width: 150px;
+	height: 50px;
+	margin-left: 320px;
+	padding-top: 45px;
+}
+.click_here a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
