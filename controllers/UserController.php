@@ -83,6 +83,7 @@ require_once(ROOT.'/models/User.php');
 
           }
           require_once(ROOT.'/views/user/login.php');
+          return true;
 
       }
 

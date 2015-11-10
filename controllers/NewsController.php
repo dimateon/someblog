@@ -22,6 +22,7 @@ class NewsController
             #$newsItem = News::getNewsItemById($id);
             $newsItem = View::ViewItemById($id);
 
+
             require_once(ROOT . '/views/news/view.php');
 
 

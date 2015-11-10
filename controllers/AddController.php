@@ -47,14 +47,8 @@ class AddController {
 
         }
 
-
         require_once (ROOT.'/views/addpost/index.php');
         return true;
-        //redirect
-
-
-
-
 
     }
 
