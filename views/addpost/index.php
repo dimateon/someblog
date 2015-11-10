@@ -1,17 +1,18 @@
 <?php include_once (ROOT.'/views/header.php'); ?>
 
-<div>
+<div class="content_add">
     <form method="post" action="#">
-    <fieldset>
-        <label for="title">Title:</label>
-        <textarea name="title" cols="40" rows="10"></textarea>
-        <label for="content">content:</label>
-        <textarea name="content" cols="40" rows="10"></textarea>
-
-    </fieldset>
-    <input type="submit" name="submit" value="send">
-
-
+    	<div class="title_form">
+    		<p>Title:</p>
+    		<input type="text" name="title" maxlength="60">	
+    	</div>
+    	<div class="content_form">
+    		<p>Content:</p>
+    		<textarea name="content"></textarea>
+    	</div>
+    	<div class="send_button">
+    		<input type="submit" name="submit" value="Send">
+    	</div>
 </form>
 </div>
 
