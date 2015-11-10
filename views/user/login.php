@@ -9,15 +9,24 @@
         </ul>
     <?php endif; ?>
 
-    <div class="signup-form"><!--sign up form-->
-        <h2>Вход на сайт</h2>
+    <div class="signin_form"><!--sign in form-->
+        <p>Sign in</p>
         <form action="#" method="post">
-
-            <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
-            <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
-            <input type="submit" name="submit" class="btn btn-default" value="Sign In" />
+            <div class="email_form">
+                <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
+            </div>
+            <div class="password_form">
+                <input type="password" name="password" placeholder="Password" value="<?php echo $password; ?>"/>
+            </div>
+            <div class="sign_in_but">
+                <input type="submit" name="submit" class="" value="Sign In" />
+            </div>
         </form>
-    </div><!--/sign up form-->
+        <p>or</p>
+            <div class="sign_up_but">
+                <a href="/user/register">Sign up</a>
+            </div>
+    </div><!--/sign in form-->
 
 
 <?php include_once ROOT.'/views/footer.php'; ?>

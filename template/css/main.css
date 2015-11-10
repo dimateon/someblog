@@ -281,4 +281,127 @@ input:active, textarea:active {outline: none;}
 	text-decoration: none;
 	color: #000;
 }
+/*                           Sign IN                       */
+.signin_form {
+	margin-top: 10px;
+}
+.signin_form input {
+	border: none;
+}
+.signin_form p {
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+/*                         Форма  email                            */
+.email_form {
+	width: 196px;
+	height: 71px;
+	border: 2px solid #000;
+	margin: 0px auto;
+}
+.email_form input {
+	background: #f9f8ee;
+	text-align: center;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	color: #000;
+	width: 192px;
+	height: 67px;
+}
+/*                        Форма password                           */
+.password_form {
+	width: 196px;
+	height: 71px;
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+	margin: 0px auto;
+}
+.password_form input {
+	background: #f9f8ee;
+	text-align: center;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	color: #000;
+	width: 192px;
+	height: 67px;	
+}
+/*                                  Кнопка Sign in                    */
+.sign_in_but {
+	width: 196px;
+	height: 71px;
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+	margin: 0px auto;
+}
+.sign_in_but input {
+	background: #f9f8ee;
+	padding-left: 40px;
+	font-family: "SegoePrintBold";
+	font-size: 18px;
+	color: #000;
+	width: 192px;
+	height: 67px;
+	background: url("../../template/images/check.png") no-repeat;
+	background-position: 44px 22px;
+}
+/*                                    Кнопка Sign up                      */
+.sign_up_but {
+	width: 96px;
+	height: 46px;
+	border: 2px solid #000;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	margin: 0px auto;
+	font-family: "SegoePrintBold";
+	font-size: 18px;
+}
+.sign_up_but a {
+	color: #000;
+}
+.sign_up_but a:hover {
+	color: #000;
+	text-decoration: none;
+}
+/*                          Sign up                        */       
+.signup_form {
+	margin-top: 10px;
+}
+.signup_form input {
+	border: none;
+}
+.signup_form p {
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+/*                           Форма username
+      форма пароля, эмейла и кнопка sign up использовались из Sign in         */
+.username_form {
+	width: 196px;
+	height: 71px;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+	margin: 0px auto;
+}
+.username_form input {
+	background: #f9f8ee;
+	text-align: center;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	color: #000;
+	width: 192px;
+	height: 67px;
+} 
+
+
+
+
+
 
