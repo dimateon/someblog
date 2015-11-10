@@ -50,6 +50,26 @@ a {
 	background: url("../images/bannerone.png");
 	position: relative;
 }
+.banner2 {
+	height: 300px;
+	background: url("../images/banner2.jpg");
+	position: relative;
+}
+.banner3 {
+	height: 300px;
+	background: url("../images/banner3.jpg");
+	position: relative;
+}
+.banner4 {
+	height: 300px;
+	background: url("../images/banner4.png");
+	position: relative;
+}
+.banner5 {
+	height: 300px;
+	background: url("../images/banneror-fraerok.png");
+	position: relative;
+}
 /*                          Логотип с ссылкой на главную страницу           */
 .name {
 	position: relative;
