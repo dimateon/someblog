@@ -1,4 +1,11 @@
 <?php include_once (ROOT.'/views/header.php'); ?>
+ <?php if (isset($errors) && is_array($errors)): ?>
+        <ul>
+            <?php foreach ($errors as $error): ?>
+                <li>- <?php echo $error; ?></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
 
 <div class="content_add">
     <form method="post" action="#">

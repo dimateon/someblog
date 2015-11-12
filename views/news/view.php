@@ -8,7 +8,7 @@
 <div style="font-size: 14px">
 
     <h1 style="font-size: 14px"><?php echo $newsItem['title']; ?></h1>
-    <p style="font-size: 14px"><?php echo $newsItem['short_content'];?></p>
+    
     <p style="font-size: 14px"><?php echo $newsItem['date'];?></p><p style="font-size: 14px"><?php echo $newsItem['author_name'];?></p>
     <p style="font-size: 14px"><?php echo $newsItem['content'];?></p>
     <p style="font-size: 14px"> <?php echo $newsItem['like']; ?></p>
