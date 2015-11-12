@@ -1,13 +1,11 @@
 <?php
 
-
-
-class News
+class Random
 {
 
 
 
-    public static function getNewsList()
+    public static function getRandList()
     {
 
         $db = Db::getConnection();
@@ -15,8 +13,8 @@ class News
         $newsList = array();
 
         $result = $db->query('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
-                  . 'ORDER BY date DESC '
-                  . 'LIMIT 3');
+            . 'ORDER BY RAND() '
+            . 'LIMIT 3');
 
 
         $i = 0;

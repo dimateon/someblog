@@ -4,6 +4,8 @@ return array(
     'search'        => 'search/index',
     'like/add/([0-9]+)' => 'like/add/$1',
 
+    'random'        => 'random/index',
+
 
     'news/([0-9]+)' => 'news/view/$1',
     'news'          => 'news/index',

@@ -2,14 +2,15 @@
 include_once ROOT . '/components/View.php';
 include_once ROOT. '/models/News.php';
 include_once ROOT.'/components/Like.php';
+include_once ROOT.'/models/Random.php';
 
-class NewsController
+class RandomController
 {
 
     public function actionIndex()
     {
         $newsList = array();
-        $newsList = News::getNewsList();
+        $newsList = Random::getRandList();
 
 
         require_once(ROOT . '/views/news/index.php');
