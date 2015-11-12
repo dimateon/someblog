@@ -2,6 +2,7 @@
 return array(
 
     'search'        => 'search/index',
+    'like/add/([0-9]+)' => 'like/add/$1',
 
 
     'news/([0-9]+)' => 'news/view/$1',

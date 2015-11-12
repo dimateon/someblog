@@ -14,8 +14,7 @@ class News
 
         $newsList = array();
 
-        $result = $db->query('SELECT id, title, date, short_content, author_name '
-                  . 'FROM posts '
+        $result = $db->query('SELECT * FROM posts '
                   . 'ORDER BY date DESC '
                   . 'LIMIT 3');
 
@@ -28,6 +27,7 @@ class News
             $newsList[$i]['data'] = $row['date'];
             $newsList[$i]['short_content'] = $row['short_content'];
             $newsList[$i]['author_name'] = $row['author_name'];
+            $newsList[$i]['like'] = $row['like'];
             $i++;
         }
 
