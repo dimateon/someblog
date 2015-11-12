@@ -21,7 +21,7 @@ class Add
 
     public static function shortPost($content) {
 
-        $short_content=substr(htmlspecialchars($content), 0, 20);
+        $short_content=substr(htmlspecialchars($content), 0, 370);
         return $short_content;
     }
     public static function getAuthorname($id) {

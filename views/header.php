@@ -4,7 +4,7 @@
     <title>Some Blog.</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link href="/template/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/template/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="/template/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="/template/js/jquery-1.6.2.js" type="text/javascript"></script>
 </head>
 <body>

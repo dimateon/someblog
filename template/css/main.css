@@ -85,7 +85,8 @@ a {
 	text-align: center;
 	color: #000;
 	display: block;
-	height: 80px;
+	height: 76px;
+	width: 96px;
 	line-height: 35px;
 }
 .name a:hover {
@@ -480,6 +481,88 @@ input:active, textarea:active {outline: none;}
 	font-size: 18px;
 	line-height: 40px;
 	color: #000;
+}
+/*                               Контент                                  */
+.short_content {
+	height: 100px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+/*                              Заголовок                      */
+.short_content h1 {
+	text-align: center;
+	overflow: hidden;
+	font-family: "SegoePrintBold";
+	font-size: 14px;
+}
+/*                                 Контент                   */
+.some_content {
+	height: 60px;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+/*                                    Дата                   */
+.content_data {
+	width: 170px;
+	height: 24px;
+	background: url("../../template/images/clock.png") no-repeat;
+	margin-left: 20px;
+}
+.content_data p {
+	padding-left: 28px;
+}
+/*                                      Автор                      */
+.author_name {
+	width: 220px;
+	height: 24px;
+	text-align: center;
+	margin-top: -24px;
+	margin-left: 190px;
+}
+.author_name a {
+	text-decoration: none;
+	font-family: "SegoeUIBold";
+	font-size: 14px;
+	color: #000;
+}
+.author_name a:hover {
+	color: #000;
+}
+/*                                Кнопка Read more                  */
+.read_more_but {
+	height: 32px;
+	width: 125px;
+	border: 2px solid #000;
+	margin: -28px auto;
+}
+.read_more_but a {
+	display: block;
+	color: #000;
+	font-size: 18px;
+	font-family: "SegoePrintBold";
+	text-align: center;
+}
+.read_more_but a:hover {
+	text-decoration: none;
+	color: #000;
+}
+/*                                 счётчик лайков                    */
+.likes {
+	width: 100px;
+	height: 24px;
+	margin-left: 650px;
+}
+.likes a {
+	width: 25px;
+	height: 25px;
+}
+.likes p {
+	margin-top: -24px;
+	margin-left: 25px;
+	line-height: 26px;
 }
 
 

@@ -40,8 +40,7 @@ class AddController {
                     header("Location:/news/$lastId");
 
 
-                }
-
+                } 
             }
 
 
