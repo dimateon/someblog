@@ -3,8 +3,11 @@ include_once ROOT.'/models/Top.php';
 include_once ROOT . '/components/View.php';
 
 class TopController {
-    public function actionIndex()
+    public function actionIndex($page = 1)
     {
+
+        echo '<br>Page: '.$page;
+
         $newsList = array();
         $newsList = Top::getTopList();
 

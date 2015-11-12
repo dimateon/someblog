@@ -6,7 +6,7 @@ return array(
 
     'random'        => 'random/index',
 
-
+    'news/page-([0-9]+)' => 'news/index/$1',
     'news/([0-9]+)' => 'news/view/$1',
     'news'          => 'news/index',
 
