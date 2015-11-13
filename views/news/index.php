@@ -23,7 +23,12 @@
 					<a href="/news/<?php echo $newsItem['id'];?>">Read more</a>
 				</div>
 				<div class="likes">
-					<a href="#"><img src="../../template/images/like.png"></a><p><?php echo $newsItem['likes'];?></p>
+					<a href="javascript://" class="like"  data-id="<?php echo $newsItem['id'];?>">
+						<img src="../../template/images/like.png">
+					</a>
+					<p id="res_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>" >
+						<?php echo $newsItem['likes'];?>
+					</p>
 				</div>
 
 		</div>

@@ -1,7 +1,7 @@
 <?php
 include_once ROOT . '/components/View.php';
 include_once ROOT. '/models/News.php';
-include_once ROOT.'/components/Like.php';
+include_once ROOT . '/components/Likes.php';
 
 class NewsController
 {
@@ -31,5 +31,7 @@ class NewsController
         return true;
 
     }
+
+
 
 }
