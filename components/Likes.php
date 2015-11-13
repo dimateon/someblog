@@ -37,9 +37,6 @@ class Likes
 
                     return true;
                 }
-            } else {
-                echo "Вы уже голосовали!";
-                exit();
             }
 
         }
