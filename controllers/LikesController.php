@@ -23,6 +23,7 @@ class LikesController
     public function actionAdd($id)
     {
 
+
         View::ViewItemById($id);
         Likes::AddLikes($id);
         $likes = Likes::showLike($id);
