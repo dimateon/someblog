@@ -25,7 +25,7 @@
             <a href="/top">Top</a>
         </div>
         <div class="random">
-            <a href="/top">Random</a>
+            <a href="/random">Random</a>
         </div>
         <div class="categories">
             <a href="/top">Categories</a>

@@ -11,7 +11,7 @@
     
     <p style="font-size: 14px"><?php echo $newsItem['date'];?></p><p style="font-size: 14px"><?php echo $newsItem['author_name'];?></p>
     <p style="font-size: 14px"><?php echo $newsItem['content'];?></p>
-    <p style="font-size: 14px"> <?php echo $newsItem['like']; ?></p>
+    <p style="font-size: 14px"> <?php echo $newsItem['likes']; ?></p>
     <a href="/news/">Back to Blog</a>
 
 
