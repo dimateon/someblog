@@ -6,10 +6,17 @@ class TopController {
     public function actionIndex($page = 1)
     {
 
-        echo '<br>Page: '.$page;
+        
+        $sql =('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
+            . 'ORDER BY likes DESC '
+            . 'LIMIT :limit '
+            . ' OFFSET :offset');
+
+
 
         $newsList = array();
-        $newsList = Top::getTopList();
+        $newsList = NewsList::getNewsList($page, $sql);
+
 
         require_once(ROOT . '/views/news/index.php');
 

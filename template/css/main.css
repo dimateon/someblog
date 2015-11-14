@@ -493,7 +493,11 @@ input:active, textarea:active {outline: none;}
 	text-align: center;
 	overflow: hidden;
 	font-family: "SegoePrintBold";
+<<<<<<< HEAD
+	font-size: 16px;
+=======
 	font-size: 14px;
+>>>>>>> 489e36376cded91a0b8384188b002ff1748ec3c8
 }
 /*                                 Контент                   */
 .some_content {
@@ -502,6 +506,10 @@ input:active, textarea:active {outline: none;}
 	font-size: 14px;
 	margin-left: 20px;
 	margin-right: 20px;
+<<<<<<< HEAD
+	margin-bottom: 20px;
+=======
+>>>>>>> 489e36376cded91a0b8384188b002ff1748ec3c8
 	overflow: hidden;
 }
 /*                                    Дата                   */
@@ -554,6 +562,7 @@ input:active, textarea:active {outline: none;}
 	width: 100px;
 	height: 24px;
 	margin-left: 650px;
+
 }
 .likes a {
 	width: 25px;
@@ -564,6 +573,21 @@ input:active, textarea:active {outline: none;}
 	margin-left: 25px;
 	line-height: 26px;
 }
+
+/*                                 Full Content                                 */
+.full_content h1 {
+	text-align: center;
+	overflow: hidden;
+	font-family: "SegoePrintBold";
+	font-size: 16px;
+}
+.big_content {
+	width: 1000px;
+	text-align: center;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+}
+
 
 
 

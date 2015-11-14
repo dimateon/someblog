@@ -1,15 +1,26 @@
 <?php
+
+
 include_once ROOT . '/components/View.php';
-include_once ROOT. '/models/News.php';
-include_once ROOT.'/components/Like.php';
+include_once ROOT. '/components/List.php';
+include_once ROOT . '/components/Likes.php';
+
 
 class NewsController
 {
 
-    public function actionIndex()
+    public function actionIndex($page = 1)
     {
+
+
+       $sql=('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
+            . 'ORDER BY date DESC '
+            . 'LIMIT :limit '
+            . ' OFFSET :offset ' );
         $newsList = array();
-        $newsList = News::getNewsList();
+        $newsList = NewsList::getNewsList($page, $sql);
+
+
 
 
         require_once(ROOT . '/views/news/index.php');
@@ -31,5 +42,6 @@ class NewsController
         return true;
 
     }
+
 
 }
