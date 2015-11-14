@@ -493,11 +493,7 @@ input:active, textarea:active {outline: none;}
 	text-align: center;
 	overflow: hidden;
 	font-family: "SegoePrintBold";
-<<<<<<< HEAD
 	font-size: 16px;
-=======
-	font-size: 14px;
->>>>>>> 489e36376cded91a0b8384188b002ff1748ec3c8
 }
 /*                                 Контент                   */
 .some_content {
@@ -506,10 +502,7 @@ input:active, textarea:active {outline: none;}
 	font-size: 14px;
 	margin-left: 20px;
 	margin-right: 20px;
-<<<<<<< HEAD
 	margin-bottom: 20px;
-=======
->>>>>>> 489e36376cded91a0b8384188b002ff1748ec3c8
 	overflow: hidden;
 }
 /*                                    Дата                   */
@@ -557,12 +550,16 @@ input:active, textarea:active {outline: none;}
 	text-decoration: none;
 	color: #000;
 }
+.read_more_but a:active {
+	text-decoration: none;
+	color: #000;
+}
 /*                                 счётчик лайков                    */
 .likes {
 	width: 100px;
 	height: 24px;
 	margin-left: 650px;
-
+	margin-top: -26px;
 }
 .likes a {
 	width: 25px;
@@ -573,8 +570,7 @@ input:active, textarea:active {outline: none;}
 	margin-left: 25px;
 	line-height: 26px;
 }
-
-/*                                 Full Content                                 */
+/*          Full Content, задействованы старые кнопки        */
 .full_content h1 {
 	text-align: center;
 	overflow: hidden;
@@ -583,11 +579,8 @@ input:active, textarea:active {outline: none;}
 }
 .big_content {
 	width: 1000px;
-	text-align: center;
-	font-family: "SegoeUIRegular";
-	font-size: 14px;
+	text-align: left;
 }
-
 
 
 

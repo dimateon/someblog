@@ -15,7 +15,7 @@ class View
 
             $db = Db::getConnection();
 
-            $sql = 'SELECT * FROM posts WHERE id= :id';
+            $sql = 'SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date  FROM posts WHERE id= :id';
 
             $result = $db->prepare($sql);
             $result->bindParam(":id", $id, PDO::PARAM_INT);
