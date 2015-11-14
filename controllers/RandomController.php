@@ -7,13 +7,14 @@ include_once ROOT.'/models/Random.php';
 class RandomController
 {
 
-    public function actionIndex()
+    public function actionIndex($page = 1)
     {
         $sql =('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
             . 'ORDER BY RAND() '
-            . 'LIMIT 3');
+            . 'LIMIT :limit '
+            . ' OFFSET :offset');
         $newsList = array();
-        $newsList = NewsList::getNewsList($sql);
+        $newsList = NewsList::getNewsList($page, $sql);
 
 
         require_once(ROOT . '/views/news/index.php');

@@ -7,16 +7,16 @@ include_once ROOT . '/components/Likes.php';
 class NewsController
 {
 
-    public function actionIndex()
+    public function actionIndex($page = 1)
     {
-       # $sql = 'SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts ORDER BY date DESC LIMIT {parent::SHOW_BY_DEFAULT OFFSET}  {$offset} ';
+
 
        $sql=('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
             . 'ORDER BY date DESC '
-            . 'LIMIT 3 '
-            . ' OFFSET 3 ' );
+            . 'LIMIT :limit '
+            . ' OFFSET :offset ' );
         $newsList = array();
-        $newsList = NewsList::getNewsList($sql);
+        $newsList = NewsList::getNewsList($page, $sql);
 
 
 
