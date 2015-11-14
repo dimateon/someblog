@@ -6,18 +6,20 @@ abstract class  NewsList
     const SHOW_BY_DEFAULT = 3;
 
 
-    public static function getNewsList( $sql)
+    public static function getNewsList($page, $sql)
     {
+        $limit = NewsList::SHOW_BY_DEFAULT;
+        $page = intval($page);
+        $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
 
 
 
 
         $db = Db::getConnection();
-        /*'SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
-            . 'ORDER BY date DESC '
-            . 'LIMIT 3 '
-            . ' OFFSET 3 ' );*/
+
         $result= $db->prepare($sql);
+        $result->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $result->bindParam(':offset', $offset, PDO::PARAM_INT);
         $result->execute();
 
         $newsList = array();

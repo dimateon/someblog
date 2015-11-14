@@ -2,7 +2,7 @@
 
 include_once ROOT.'/components/View.php';
 include_once ROOT.'/components/Likes.php';
-include_once ROOT.'/models/News.php';
+include_once ROOT.'/components/List.php';
 
 class LikesController
 {
