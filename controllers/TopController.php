@@ -3,13 +3,16 @@ include_once ROOT.'/models/Top.php';
 include_once ROOT . '/components/View.php';
 
 class TopController {
-    public function actionIndex($page = 1)
+    public function actionIndex()
     {
+        $sql =('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
+            . 'ORDER BY likes DESC '
+            . 'LIMIT 3');
 
-        echo '<br>Page: '.$page;
+
 
         $newsList = array();
-        $newsList = Top::getTopList();
+        $newsList = NewsList::getNewsList($sql);
 
         require_once(ROOT . '/views/news/index.php');
 

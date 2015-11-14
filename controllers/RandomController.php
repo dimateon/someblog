@@ -1,6 +1,6 @@
 <?php
 include_once ROOT . '/components/View.php';
-include_once ROOT. '/models/News.php';
+
 include_once ROOT . '/components/Likes.php';
 include_once ROOT.'/models/Random.php';
 
@@ -9,8 +9,11 @@ class RandomController
 
     public function actionIndex()
     {
+        $sql =('SELECT *, DATE_FORMAT(date,"%d.%m.%y") as date FROM posts '
+            . 'ORDER BY RAND() '
+            . 'LIMIT 3');
         $newsList = array();
-        $newsList = Random::getRandList();
+        $newsList = NewsList::getNewsList($sql);
 
 
         require_once(ROOT . '/views/news/index.php');

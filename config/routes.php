@@ -8,10 +8,11 @@ return array(
 
     'random'        => 'random/index',
 
-    'news/page-([0-9]+)' => 'news/index/$1',
+    'news/page-([0-9]+)' => 'news/index/$1/',
 
     'news/([0-9]+)' => 'news/view/$1',
     'news'          => 'news/index',
+
 
     'top/([0-9]+)'  => 'top/view/$1',
     'top'           => 'top/index',
