@@ -5,7 +5,7 @@
         window.scrollTo( 0, 550 );
     }
 </script>
-
+<<<<<<< HEAD
 <div class="full_content">
 
     <h1><?php echo $newsItem['title']; ?></h1>

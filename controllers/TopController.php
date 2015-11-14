@@ -10,11 +10,8 @@ class TopController {
             . 'LIMIT :limit '
             . ' OFFSET :offset');
 
-
-
         $newsList = array();
         $newsList = NewsList::getNewsList($page, $sql);
-
         require_once(ROOT . '/views/news/index.php');
 
 

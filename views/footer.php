@@ -8,6 +8,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5da951c95dc7a5ca39c6964291a5374ae28ec94
 <script>
     $(document).ready(function(){
         $('.like').click(function(){
@@ -19,5 +23,9 @@
         });
     });
 </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5da951c95dc7a5ca39c6964291a5374ae28ec94
 </body>
 <html>

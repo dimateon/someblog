@@ -1,6 +1,5 @@
 <?php
 include_once ROOT . '/components/View.php';
-
 include_once ROOT . '/components/Likes.php';
 include_once ROOT.'/models/Random.php';
 
@@ -15,8 +14,6 @@ class RandomController
             . ' OFFSET :offset');
         $newsList = array();
         $newsList = NewsList::getNewsList($page, $sql);
-
-
         require_once(ROOT . '/views/news/index.php');
 
 
