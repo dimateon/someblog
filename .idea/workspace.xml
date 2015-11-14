@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb024b2-a961-432f-8377-84f41253d825" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/LikesController.php" afterPath="$PROJECT_DIR$/controllers/LikesController.php" />
     </list>
     <ignored path="someblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -577,7 +576,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447464393681</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <created>1447465349911</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1447465349911</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -622,7 +627,8 @@
     <MESSAGE value="Добавлена система лайков." />
     <MESSAGE value="Доработана система лайков" />
     <MESSAGE value="Рефакторинг" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
