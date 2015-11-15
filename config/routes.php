@@ -1,7 +1,8 @@
 <?php
 return array(
 
-    'search'        => 'search/index',
+    'search/([a-z]+)/page-([0-9]+)'        => 'search/index/$1/$2',
+    'search/([a-z0-9]+)'          =>  'search/index/$1',
 
 
 

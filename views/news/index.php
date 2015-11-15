@@ -17,7 +17,7 @@
 					<p><?php echo $newsItem['data'];?></p>
 				</div>
 				<div class="author_name">
-					<a href="/search/" name="fa"><p><?php echo $newsItem['author_name'];  ?></p></a>
+					<a href="/search/<?php echo $newsItem['author_name'];  ?>"  name="fa"><p><?php echo $newsItem['author_name'];  ?></p></a>
 				</div>
 				<div class="read_more_but">
 					<a href="/news/<?php echo $newsItem['id'];?>">Read more</a>
