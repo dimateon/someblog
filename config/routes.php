@@ -9,6 +9,7 @@ return array(
     'likes/add/([0-9]+)' => 'likes/add/$1',
     'likes/([0-9]+)' => 'likes/index/$1',
 
+    'random/page-([0-9]+)' => 'random/index/$1/',
     'random'        => 'random/index',
 
     'news/page-([0-9]+)' => 'news/index/$1/',
@@ -16,6 +17,7 @@ return array(
     'news/([0-9]+)' => 'news/view/$1',
     'news'          => 'news/index',
 
+    'top/page-([0-9]+)' => 'top/index/$1/',
     'top/([0-9]+)'  => 'top/view/$1',
     'top'           => 'top/index',
 

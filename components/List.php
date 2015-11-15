@@ -40,4 +40,17 @@ abstract class  NewsList
 
 
     }
+    public static function getTotalPages()
+    {
+        $db = Db::getConnection();
+        $result = $db->query('SELECT count(id) AS count FROM posts');
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $row = $result->fetch();
+
+        return $row['count'];
+
+
+
+
+    }
 }

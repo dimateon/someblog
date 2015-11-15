@@ -1,5 +1,5 @@
 <?php
-
+include_once ROOT.'/components/Pagination.php';
 include_once ROOT . '/components/View.php';
 include_once ROOT. '/components/List.php';
 include_once ROOT . '/components/Likes.php';
@@ -13,7 +13,14 @@ class NewsController
             . ' OFFSET :offset ' );
         $newsList = array();
         $newsList = NewsList::getNewsList($page, $sql);
+
+        $total = NewsList::getTotalPages();
+
+        $pagination = new Pagination($total, $page, NewsList::SHOW_BY_DEFAULT, 'page-');
+
+
         require_once(ROOT . '/views/news/index.php');
+
         return true;
     }
     public function actionView($id)
