@@ -5,7 +5,7 @@ return array(
     'search/([a-z0-9]+)'          =>  'search/index/$1',
 
 
-
+    'favorite/add/([0-9]+)'  => 'favorite/add/$1',
 
     'likes/add/([0-9]+)' => 'likes/add/$1',
     'likes/([0-9]+)' => 'likes/index/$1',

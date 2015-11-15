@@ -30,6 +30,9 @@
 						<?php echo $newsItem['likes'];?>
 					</p>
 				</div>
+			    <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
+					addToFavorite
+				</a>
 
 
 		</div>
