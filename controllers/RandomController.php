@@ -1,11 +1,8 @@
 <?php
 include_once ROOT . '/components/View.php';
-
-
 include_once ROOT . '/components/Likes.php';
-
 include_once ROOT.'/models/Random.php';
-
+include_once ROOT.'/components/Pagination.php';
 class RandomController
 {
 
@@ -17,9 +14,9 @@ class RandomController
             . ' OFFSET :offset');
         $newsList = array();
         $newsList = NewsList::getNewsList($page, $sql);
+        $total = NewsList::getTotalPages();
 
-
-
+        $pagination = new Pagination($total, $page, NewsList::SHOW_BY_DEFAULT, 'page-');
         require_once(ROOT . '/views/news/index.php');
 
 
@@ -30,6 +27,7 @@ class RandomController
         if($id) {
             #$newsItem = News::getNewsItemById($id);
             $newsItem = View::ViewItemById($id);
+
 
 
             require_once(ROOT . '/views/news/view.php');

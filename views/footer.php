@@ -6,20 +6,10 @@
 </div>
 </div>
 
+<!-- js скриптики -->
 
-
-
-<script>
-    $(document).ready(function(){
-        $('.like').click(function(){
-            var id = $(this).attr('data-id');
-            $.post("/likes/add/"+id, {}, function (data) {
-                $("#res_"+id).html(data);
-            });
-
-        });
-    });
-</script>
+<script type="application/javascript" src="../js/likes.js"></script>
+<script type="application/javascript" src="../js/favorite.js"></script>
 
 </body>
 <html>

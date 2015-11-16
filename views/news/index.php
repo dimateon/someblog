@@ -17,13 +17,12 @@
 					<p><?php echo $newsItem['data'];?></p>
 				</div>
 				<div class="author_name">
-					<a href="/search/" name="fa"><p><?php echo $newsItem['author_name'];  ?></p></a>
+					<a href="/search/<?php echo $newsItem['author_name'];  ?>"  name="fa"><p><?php echo $newsItem['author_name'];  ?></p></a>
 				</div>
 				<div class="read_more_but">
 					<a href="/news/<?php echo $newsItem['id'];?>">Read more</a>
 				</div>
 				<div class="likes">
-
 					<a href="javascript://" class="like"  data-id="<?php echo $newsItem['id'];?>">
 						<img src="../../template/images/like.png">
 					</a>
@@ -31,11 +30,16 @@
 						<?php echo $newsItem['likes'];?>
 					</p>
 				</div>
+			    <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
+					addToFavorite
+				</a>
 
 
 		</div>
 	</div>
         <?php endforeach ?>
+<!-- Навигация -->
+<?php echo $pagination->get(); ?>
 
 
 

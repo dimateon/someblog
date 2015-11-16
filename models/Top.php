@@ -1,8 +1,6 @@
 <?php
-
-
-
 include_once ROOT. '/components/List.php';
+
 
 class Top extends NewsList
 {
