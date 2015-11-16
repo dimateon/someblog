@@ -70,44 +70,7 @@ a {
 	background: url("../images/banneror-fraerok.png");
 	position: relative;
 }
-/*                   profile                            */
-.wrapper-dropdown-1 {
-	/*border: 1px solid #000;*/
-	width: 150px;
-	height: 100px;
-	font-family: "SegoePrintBold";
-	font-size: 14px;
-	margin-left: 800px;
-	margin-top: -60px;
-}
-.wrapper-dropdown-1 ul {
-	list-style: none;
-	display: ;
-}
-.wrapper-dropdown-1 a {
-	text-decoration: none;
-	color: #000;
-}
-.wrapper-dropdown-1 span {
-	margin-left: 40px;
-	display: block;
-}
-.wrapper-dropdown-1:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 80px;
-    top: 10%;
-    margin-top: -6px;
-    border-width: 6px 0px 6px 6px;
-    border-style: solid;
-    border-color: transparent #000;   
-}
-.dropdown {
-	display: block;
-}
-/*                        Логотип                 */
+/*                          Логотип с ссылкой на главную страницу           */
 .name {
 	position: relative;
 	top: 27px;
@@ -518,7 +481,6 @@ input:active, textarea:active {outline: none;}
 	font-size: 18px;
 	line-height: 40px;
 	color: #000;
-	background: #f9f8ee;
 }
 /*                               Контент                                  */
 .short_content {
@@ -529,8 +491,9 @@ input:active, textarea:active {outline: none;}
 /*                              Заголовок                      */
 .short_content h1 {
 	text-align: center;
+	overflow: hidden;
 	font-family: "SegoePrintBold";
-	font-size: 16px;
+	font-size: 14px;
 }
 /*                                 Контент                   */
 .some_content {
@@ -539,7 +502,6 @@ input:active, textarea:active {outline: none;}
 	font-size: 14px;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-bottom: 20px;
 	overflow: hidden;
 }
 /*                                    Дата                   */
@@ -587,16 +549,11 @@ input:active, textarea:active {outline: none;}
 	text-decoration: none;
 	color: #000;
 }
-.read_more_but a:active {
-	text-decoration: none;
-	color: #000;
-}
 /*                                 счётчик лайков                    */
 .likes {
 	width: 100px;
 	height: 24px;
 	margin-left: 650px;
-	margin-top: -26px;
 }
 .likes a {
 	width: 25px;
@@ -606,16 +563,6 @@ input:active, textarea:active {outline: none;}
 	margin-top: -24px;
 	margin-left: 25px;
 	line-height: 26px;
-}
-/*          Full Content, задействованы старые кнопки        */
-.full_content h1 {
-	text-align: center;
-	font-family: "SegoePrintBold";
-	font-size: 16px;
-}
-.big_content {
-	width: 1000px;
-	text-align: left;
 }
 
 
