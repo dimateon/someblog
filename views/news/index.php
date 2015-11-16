@@ -14,7 +14,7 @@
 					<p><?php echo $newsItem['short_content'];?></p>
 				</div>
 				<div class="content_data">
-					<p><?php echo $newsItem['data'];?></p>
+					<p><?php echo $newsItem['date'];?></p>
 				</div>
 				<div class="author_name">
 					<a href="/search/<?php echo $newsItem['author_name'];  ?>"  name="fa"><p><?php echo $newsItem['author_name'];  ?></p></a>

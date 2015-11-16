@@ -29,7 +29,7 @@ abstract class  NewsList
         while ($row = $result->fetch()) {
             $newsList[$i]['id'] = $row['id'];
             $newsList[$i]['title'] = $row['title'];
-            $newsList[$i]['data'] = $row['date'];
+            $newsList[$i]['date'] = $row['date'];
             $newsList[$i]['short_content'] = $row['short_content'];
             $newsList[$i]['author_name'] = $row['author_name'];
             $newsList[$i]['likes'] = $row['likes'];

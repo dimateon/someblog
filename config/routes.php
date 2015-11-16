@@ -4,8 +4,11 @@ return array(
     'search/([a-z]+)/page-([0-9]+)'        => 'search/index/$1/$2',
     'search/([a-z0-9]+)'          =>  'search/index/$1',
 
-
     'favorite/add/([0-9]+)'  => 'favorite/add/$1',
+    'favorite/page-([0-9]+)' => 'favorite/showfavorite/$1',
+    'favorite/([0-9]+)'      => 'favorite/view/$1',
+    'favorite'               => 'favorite/showfavorite',
+
 
     'likes/add/([0-9]+)' => 'likes/add/$1',
     'likes/([0-9]+)' => 'likes/index/$1',
