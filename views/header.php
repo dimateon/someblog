@@ -15,7 +15,7 @@
             <a href="/">Some<br>blog.</a>
         </div>
         <div id="dd" class="wrapper-dropdown-1">
-            <span><a href="#">Nickname</a></span>
+            <span><a href="#"><?php echo $_SESSION['user'];?></a></span>
             <ul id="dropdown" class="">
                 <a href="/myposts/"><li>My posts</li></a>
                 <a href="/favorite/"><li>Bookmarks</li></a>
@@ -44,7 +44,7 @@
         </div>
         <div class="search_bg">
             <!--Ниже нужно указать вид передачи данных какойто, думаю тебе виднее какой нужен-->
-            <form method="post" action="">
+            <form method="post"  action="/word/">
                 <div class="search">
                     <input type="text" name="search" placeholder="Search something?">
                 </div>

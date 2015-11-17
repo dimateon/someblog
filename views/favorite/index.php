@@ -39,6 +39,7 @@
     </div>
 <?php endforeach ?>
 <!-- Навигация -->
+
 <?php echo $pagination->get(); ?>
 
 

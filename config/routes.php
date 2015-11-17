@@ -3,6 +3,7 @@ return array(
 
     'search/([a-z]+)/page-([0-9]+)'        => 'search/index/$1/$2',
     'search/([a-z0-9]+)'                   =>  'search/index/$1',
+    'word'        => 'word/search',
 
     'myposts/delete/([0-9]+)'=>'myposts/deletepost/$1',
     'myposts/page-([0-9]+)' =>'myposts/index/$1',

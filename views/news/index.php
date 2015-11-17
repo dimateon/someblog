@@ -31,7 +31,7 @@
 					</p>
 				</div>
 			    <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
-					addToFavorite
+					<img src="../../template/images/favorite.png">
 				</a>
 
 
@@ -39,7 +39,9 @@
 	</div>
         <?php endforeach ?>
 <!-- Навигация -->
-<?php echo $pagination->get(); ?>
+<div class="pages">
+	<?php echo $pagination->get(); ?>
+</div>
 
 
 
