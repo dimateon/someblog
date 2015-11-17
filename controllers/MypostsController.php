@@ -29,10 +29,13 @@ class MypostsController
             $pagination = new Pagination($total, $page, Favorite::SHOW_BY_DEFAULT, 'page-');
 
 
-
+            require_once ROOT.'/views/mypost/index.php';
 
         }
-       require_once ROOT.'/views/mypost/index.php';
+        else {
+            header("Location:/user/login");
+        }
+
         return true;
     }
     public function actionView($id)
