@@ -124,6 +124,18 @@ class Myposts
     }
     public static function deletePostByAuthor($author_name, $id)
     {
+        $author_name = strval($author_name);
+        $id = intval($id);
+        if($id) {
+            $db = Db::getConnection();
+
+            $sql = ('DELETE FROM posts WHERE author_name = :author_name AND id = :id');
+            $result = $db->prepare($sql);
+            $result->bindParam(':author_name', $author_name, PDO::PARAM_STR);
+            $result->bindParam(':id', $id, PDO::PARAM_INT);
+            $result->execute();
+
+        }
 
     }
 

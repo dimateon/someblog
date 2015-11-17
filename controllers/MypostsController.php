@@ -47,4 +47,19 @@ class MypostsController
         }
         return true;
     }
+
+
+    public function actionDeletePost($id)
+    {
+        $id_user = $_SESSION['user'];
+        if($id_user) {
+            $author_name = Myposts::getNameById($id_user);
+            Myposts::deletePostByAuthor($author_name, $id);
+
+
+        }
+
+        return true;
+    }
+
 }
