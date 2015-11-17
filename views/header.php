@@ -18,8 +18,12 @@
             <span><a href="#">Nickname</a></span>
             <ul id="dropdown" class="">
                 <a href="#"><li>My posts</li></a>
+
                 <a href="#"><li>Bookmarks</li></a>
                 <a href="/user/logout"><li>Exit</li></a>
+
+                <a href="/favorite/"><li>Bookmarks</li></a>
+                <a href="#"><li>Exit</li></a>
             </ul> 
         </div>
         <!-- <div class=sign>
