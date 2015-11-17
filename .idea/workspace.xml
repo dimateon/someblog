@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb024b2-a961-432f-8377-84f41253d825" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/MypostsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Myposts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/mypost/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/mypost/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Favorite.php" afterPath="$PROJECT_DIR$/components/Favorite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.php" afterPath="$PROJECT_DIR$/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.php" afterPath="$PROJECT_DIR$/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/FavoriteController.php" afterPath="$PROJECT_DIR$/controllers/FavoriteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/MypostsController.php" afterPath="$PROJECT_DIR$/controllers/MypostsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Myposts.php" afterPath="$PROJECT_DIR$/models/Myposts.php" />
     </list>
     <ignored path="someblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FavoriteController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FavoriteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/FavoriteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.407408">
-              <caret line="46" column="26" selection-start-line="42" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
+            <state vertical-scroll-proportion="1.1027837">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -50,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Myposts.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Myposts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Myposts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8479657">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state vertical-scroll-proportion="-28.407408">
+              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -63,8 +59,8 @@
       <file leaf-file-name="MypostsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/MypostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.074074">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state vertical-scroll-proportion="-17.074074">
+              <caret line="36" column="9" selection-start-line="34" selection-start-column="7" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -177,13 +173,13 @@
         <option value="$PROJECT_DIR$/views/favorite/index.php" />
         <option value="$PROJECT_DIR$/views/favorite/view.php" />
         <option value="$PROJECT_DIR$/components/Favorite.php" />
-        <option value="$PROJECT_DIR$/controllers/FavoriteController.php" />
         <option value="$PROJECT_DIR$/config/routes.php" />
-        <option value="$PROJECT_DIR$/controllers/MypostsController.php" />
         <option value="$PROJECT_DIR$/views/mypost/index.php" />
         <option value="$PROJECT_DIR$/views/mypost/view.php" />
-        <option value="$PROJECT_DIR$/models/Myposts.php" />
         <option value="$PROJECT_DIR$/views/header.php" />
+        <option value="$PROJECT_DIR$/models/Myposts.php" />
+        <option value="$PROJECT_DIR$/controllers/MypostsController.php" />
+        <option value="$PROJECT_DIR$/controllers/FavoriteController.php" />
       </list>
     </option>
   </component>
@@ -666,7 +662,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447703837232</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Вкладка мои посты">
+      <created>1447752945935</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1447752945935</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -675,13 +677,13 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16731016" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34987593" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35359803" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -717,7 +719,8 @@
     <MESSAGE value="Добавил закладки, поиск по никнейму" />
     <MESSAGE value="Merge branch 'master' of https://github.com/dimateon/someblog&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="Добавлены закладки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены закладки" />
+    <MESSAGE value="Вкладка мои посты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вкладка мои посты" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -941,6 +944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,22 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Favorite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-48.407406">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/FavoriteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.407408">
-          <caret line="46" column="26" selection-start-line="42" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.0">
@@ -1058,14 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.333334">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/MypostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.074074">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1086,10 +1066,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/MypostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.074074">
+          <caret line="36" column="9" selection-start-line="34" selection-start-column="7" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Myposts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8479657">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="-28.407408">
+          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Favorite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-48.407406">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/FavoriteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1027837">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding />
         </state>
       </provider>

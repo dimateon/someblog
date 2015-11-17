@@ -33,11 +33,13 @@ class FavoriteController
             $pagination = new Pagination($total, $page, Favorite::SHOW_BY_DEFAULT, 'page-');
 
 
+            require_once ROOT.'/views/favorite/index.php';
 
-
+        } else {
+            header("Location:/user/login");
         }
 
-        require_once ROOT.'/views/favorite/index.php';
+
         return true;
     }
     public function actionView($id)

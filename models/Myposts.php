@@ -122,6 +122,10 @@ class Myposts
 
 
     }
+    public static function deletePostByAuthor($author_name, $id)
+    {
+
+    }
 
 
 }
