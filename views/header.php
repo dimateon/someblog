@@ -17,12 +17,11 @@
         <div id="dd" class="wrapper-dropdown-1">
             <span><a href="#">Nickname</a></span>
             <ul id="dropdown" class="">
-                <a href="#"><li>My posts</li></a>
 
                 <a href="/favorite/"><li>Bookmarks</li></a>
                 <a href="/user/logout"><li>Exit</li></a>
+                <a href="/myposts/"><li>My posts</li></a>
 
-                
             </ul> 
         </div>
         <!-- <div class=sign>

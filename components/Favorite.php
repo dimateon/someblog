@@ -57,22 +57,26 @@ class Favorite
         $offset = ($page - 1) * Favorite::SHOW_BY_DEFAULT;
 
         if($id_user){
+
             $db = Db::getConnection();
             $sql = ('SELECT id_post FROM favorite '
                   .'WHERE id_user = :id_user '
                   .'LIMIT :limit '
                   .' OFFSET :offset');
+
             $result= $db->prepare($sql);
             $result->bindParam(':id_user', $id_user, PDO::PARAM_INT);
             $result->bindParam(':limit', $limit, PDO::PARAM_INT);
             $result->bindParam(':offset', $offset, PDO::PARAM_INT);
             $result->execute();
+
             $postList = array();
             $i = 0;
             while ($row = $result->fetch()) {
                 $postList[$i]['id_post'] = $row['id_post'];
                 $i++;
             }
+
             return $postList;
 
         }
@@ -82,16 +86,9 @@ class Favorite
 
         $newsList = array();
         foreach ($postList as $key => $value) {
-
-
             $item = $value['id_post'];
-
-
-
-
-        $db = Db::getConnection();
-
-           $sql = ('SELECT * FROM posts '
+            $db = Db::getConnection();
+            $sql = ('SELECT * FROM posts '
                  .'WHERE id = :item');
             $result = $db->prepare($sql);
             $result->bindParam(':item', $item, PDO::PARAM_INT);
@@ -110,12 +107,8 @@ class Favorite
            }
 
             $newsList[] = $list;
-
-
-
        }
         return $newsList;
-
 
     }
     public static function getTotalPages($id_user)
