@@ -30,18 +30,21 @@
                     <?php echo $newsItem['likes'];?>
                 </p>
             </div>
-            <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
-                addToFavorite
-            </a>
-
+            <div class="bookmarks">
+                <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
+                   <img src="../../template/images/qwer.png">
+                </a>
+            </div>
 
         </div>
     </div>
 <?php endforeach ?>
 <!-- Навигация -->
 
-<?php echo $pagination->get(); ?>
+<div class="pages">
 
+<?php echo $pagination->get(); ?>
+</div>
 
 
 <?php include_once ROOT.'/views/footer.php'; ?>
