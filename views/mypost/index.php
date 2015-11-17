@@ -33,6 +33,10 @@
             <a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
                 addToFavorite
             </a>
+            <br>
+            <a href="javascript://" class="delete" id="delete_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
+                delete
+            </a>
 
 
         </div>
