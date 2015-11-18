@@ -1,6 +1,6 @@
 <?php
-include_once ROOT.'/components/Db.php';
-include_once ROOT.'/components/List.php';
+/*include_once ROOT.'/components/Db.php';
+include_once ROOT.'/components/List.php';*/
 
 class Search {
     const SHOW_BY_DEFAULT = 3;
@@ -70,6 +70,8 @@ class Search {
 
 
     }
+
+
 
 
 

@@ -36,7 +36,9 @@
     </div>
 <?php endforeach ?>
 <!-- Навигация -->
-<?php echo $pagination->get(); ?>
+<div class="pages">
+    <?php echo $pagination->get(); ?>
+</div>
 
 
 

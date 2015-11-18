@@ -1,8 +1,8 @@
 <?php
-include_once ROOT.'/components/List.php';
+/*include_once ROOT.'/components/List.php';
 include_once ROOT.'/components/View.php';
 include_once ROOT.'/components/Pagination.php';
-include_once ROOT.'/models/Search.php';
+include_once ROOT.'/models/Search.php';*/
 
 class SearchController
 {
@@ -36,6 +36,8 @@ class SearchController
         }
         return true;
     }
+
+
 
 
 }

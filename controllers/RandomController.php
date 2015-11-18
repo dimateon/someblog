@@ -1,8 +1,8 @@
 <?php
-include_once ROOT . '/components/View.php';
+/*include_once ROOT . '/components/View.php';
 include_once ROOT . '/components/Likes.php';
 include_once ROOT.'/models/Random.php';
-include_once ROOT.'/components/Pagination.php';
+include_once ROOT.'/components/Pagination.php';*/
 class RandomController
 {
 

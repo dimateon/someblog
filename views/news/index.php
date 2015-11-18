@@ -1,6 +1,7 @@
 <?php include_once ROOT.'/views/header.php'; ?>
 
 
+
 		<?php  foreach($newsList as $newsItem): ?>
 	<div class="short_content">
 		<div xmlns="http://www.w3.org/1999/html">
@@ -30,19 +31,23 @@
 						<?php echo $newsItem['likes'];?>
 					</p>
 				</div>
+
 				<div class="bookmarks">
 			    	<a href="javascript://" class="favorite" id="favorite_<?php echo $newsItem['id'];?>" data-id="<?php echo $newsItem['id'];?>">
 						<img src="../../template/images/qwer.png">
 					</a>
 				</div>
 
+
 		</div>
 	</div>
         <?php endforeach ?>
 <!-- Навигация -->
+
 	<div class="pages">
 		<?php echo $pagination->get(); ?>
 	</div>
+
 
 
 <?php include_once ROOT.'/views/footer.php'; ?>
