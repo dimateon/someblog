@@ -102,5 +102,45 @@ class User
 
     }
 
+    public static function getName() {
+        if(isset($_SESSION['user'])){
+
+            $id_user=$_SESSION['user'];
+            $db = Db::getConnection();
+            $sql = ('SELECT name FROM user '
+                . 'WHERE id = :id_user');
+            $result = $db->prepare($sql);
+            $result->bindParam(':id_user', $id_user, PDO::PARAM_STR);
+            $result->execute();
+            $name = $result->fetch();
+            $author_name = $name['name'];
+            return $author_name;
+        }
+    }
+
+    public static function getNavBar($author_name) {
+
+        if(isset($_SESSION['user']))
+
+        {
+            echo
+            "
+            <div id=\"dd\" class=\"wrapper-dropdown-1\">
+            <span><a href=\"#\">$author_name</a></span>
+            <ul id=\"dropdown\" class=\"\">
+                <a href=\"/favorite/\"><li>Bookmarks</li></a>
+                <a href=\"/myposts/\"><li>My posts</li></a>
+                <a href=\"/user/logout\"><li>Exit</li></a>
+            </ul>
+        </div>
+            ";
+
+        } else {
+            echo "<div class=sign>
+            <a href=\"/user/login\"><p>Sign in or  <br>Sign up</p></a>
+        </div>";
+        }
+    }
+
 
 }

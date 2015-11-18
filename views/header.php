@@ -14,17 +14,9 @@
         <div class="name">
             <a href="/">Some<br>blog.</a>
         </div>
-        <div id="dd" class="wrapper-dropdown-1">
-            <span><a href="#"><?php echo $_SESSION['user'];?></a></span>
-            <ul id="dropdown" class="">
-                <a href="/favorite/"><li>Bookmarks</li></a>
-                <a href="/myposts/"><li>My posts</li></a>
-                <a href="/user/logout"><li>Exit</li></a>
-            </ul> 
-        </div>
-        <!-- <div class=sign>
-            <a href="/user/login"><p>Sign in or  <br>Sign up</p></a>
-        </div> -->
+        <?php $author_name = User::getName(); ?>
+        <?php echo User::getNavBar($author_name); ?>
+
     </div>
     <div class="header">
         <div class="new">
@@ -44,7 +36,7 @@
         </div>
         <div class="search_bg">
             <!--Ниже нужно указать вид передачи данных какойто, думаю тебе виднее какой нужен-->
-            <form method="post"  action="/word/">
+            <form method="post"  action="/word">
                 <div class="search">
                     <input type="text" name="search" placeholder="Search something?">
                 </div>

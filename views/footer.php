@@ -11,6 +11,7 @@
 <script type="application/javascript" src="../js/likes.js"></script>
 <script type="application/javascript" src="../js/favorite.js"></script>
 <script type="application/javascript" src="../js/delete.js"></script>
+<script type="application/javascript" src="../js/profile.js"></script>
 
 </body>
 <html>

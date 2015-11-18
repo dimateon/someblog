@@ -1,7 +1,7 @@
 <?php
-include_once ROOT.'/models/Top.php';
+/*include_once ROOT.'/models/Top.php';
 include_once ROOT . '/components/View.php';
-include_once ROOT.'/components/Pagination.php';
+include_once ROOT.'/components/Pagination.php';*/
 class TopController {
     public function actionIndex($page = 1)
     {

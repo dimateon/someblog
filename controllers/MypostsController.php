@@ -1,10 +1,10 @@
 <?php
-include_once ROOT.'/models/Myposts.php';
+/*include_once ROOT.'/models/Myposts.php';
 include_once ROOT.'/components/Favorite.php';
 include_once ROOT.'/components/View.php';
 include_once ROOT.'/components/List.php';
 include_once ROOT.'/components/Likes.php';
-include_once ROOT.'/components/Pagination.php';
+include_once ROOT.'/components/Pagination.php';*/
 
 
 class MypostsController

@@ -56,6 +56,8 @@ require_once(ROOT.'/models/User.php');
 
               $errors = false;
 
+
+
               //Валидация
 
               if (!User::checkEmail($email)) {

@@ -1,6 +1,7 @@
 <?php include_once ROOT.'/views/header.php'; ?>
 
 
+
 		<?php  foreach($newsList as $newsItem): ?>
 	<div class="short_content">
 		<div xmlns="http://www.w3.org/1999/html">

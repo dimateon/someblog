@@ -1,8 +1,8 @@
 <?php
 
-include_once ROOT.'/models/User.php';
+/*include_once ROOT.'/models/User.php';
 include_once ROOT.'/components/Db.php';
-include_once ROOT.'/components/List.php';
+include_once ROOT.'/components/List.php';*/
 
 class Myposts
 {

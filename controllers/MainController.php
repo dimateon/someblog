@@ -1,5 +1,5 @@
 <?php
-include_once ROOT.'/models/User.php';
+/*include_once ROOT.'/models/User.php';*/
 
 class MainController
 {
