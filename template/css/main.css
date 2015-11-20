@@ -72,7 +72,7 @@ a {
 	position: relative;
 }
 /*                   profile                            */
-.wrapper-dropdown-1 {
+#wrapper-dropdown-1 {
 	/*border: 1px solid #000;*/
 	width: 150px;
 	height: 100px;
@@ -81,32 +81,21 @@ a {
 	margin-left: 800px;
 	margin-top: -60px;
 }
-.wrapper-dropdown-1 ul {
+#wrapper-dropdown-1 ul {
 	list-style: none;
-	display: ;
+	display: block;
+	position: absolute;
 }
-.wrapper-dropdown-1 a {
+#wrapper-dropdown-1 a {
 	text-decoration: none;
 	color: #000;
 }
-.wrapper-dropdown-1 span {
+#wrapper-dropdown-1 span {
 	margin-left: 40px;
 	display: block;
 }
-.wrapper-dropdown-1:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 80px;
-    top: 10%;
-    margin-top: -6px;
-    border-width: 6px 0px 6px 6px;
-    border-style: solid;
-    border-color: transparent #000;   
-}
-.dropdown {
-	display: block;
+.hide {
+	display: none;
 }
 /*                        Логотип                 */
 .name {

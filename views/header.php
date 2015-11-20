@@ -14,9 +14,18 @@
         <div class="name">
             <a href="/">Some<br>blog.</a>
         </div>
-        <?php $author_name = User::getName(); ?>
-        <?php echo User::getNavBar($author_name); ?>
+        <!--<?php $author_name = User::getName(); ?>
+        <?php echo User::getNavBar($author_name); ?>-->
 
+        <!--       PROFILE               -->
+        <div id="wrapper-dropdown-1">
+        <span><a href="#">$author_name</a></span>
+        <ul class="hide">
+        <li class="dropdown"><a href="favorite">Bookmarks</a></li>
+        <li class="dropdown"><a href="myposts">My posts</a></li>
+        <li class="dropdown"><a href="user/logout">Exit</a></li>
+        </ul>
+        </div>
     </div>
     <div class="header">
         <div class="new">
